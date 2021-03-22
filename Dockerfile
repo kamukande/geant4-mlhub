@@ -31,7 +31,6 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /opt/geant4/data
 COPY --from=builder /opt/geant4/install /opt/geant4/install
-COPY entry-point.sh /entry-point.sh
 
 WORKDIR /root
 
